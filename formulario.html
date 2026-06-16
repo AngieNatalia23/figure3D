@@ -1,0 +1,68 @@
+<section id="formulario-compra" class="container py-5">
+    <h2 class="text-center mb-4">Formulario de Compra</h2>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <div class="form-header">
+    <a href="index.html" class="btn-volver-tienda">
+        ← Seguir comprando
+    </a>
+</div>
+<form action="#" method="post" class="border p-4 rounded shadow">
+
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre Completo</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="correo" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="correo" name="correo" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="telefono" class="form-label">Teléfono</label>
+        <input type="tel" class="form-control" id="telefono" name="telefono" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="producto" class="form-label">Seleccione el Producto</label>
+        <select class="form-select" id="producto" name="producto" required>
+            <option value="">Seleccione una opción</option>
+            <option value="Batman">Figura de Batman - $59.900</option>
+            <option value="Mandalorian">Figura de Mandalorian - $49.999</option>
+            <option value="Mike Stranger Things">Figura de Mike - $39.999</option>
+            <option value="Capitan America">Figura de Capitán América - $54.999</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label for="cantidad" class="form-label">Cantidad</label>
+        <input type="number" class="form-control" id="cantidad" name="cantidad" min="1" value="1" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="direccion" class="form-label">Dirección de Entrega</label>
+        <textarea class="form-control" id="direccion" name="direccion" rows="3" required></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label for="pago" class="form-label">Método de Pago</label>
+        <select class="form-select" id="pago" name="pago" required>
+            <option value="">Seleccione</option>
+            <option value="Tarjeta">Tarjeta de Crédito/Débito</option>
+            <option value="PSE">PSE</option>
+            <option value="Nequi">Nequi</option>
+            <option value="Daviplata">Daviplata</option>
+            <option value="ContraEntrega">Contra Entrega</option>
+        </select>
+    </div>
+
+    <div class="text-center">
+        <button type="submit" class="btn btn-success">
+            Realizar Pedido
+        </button>
+    </div>
+
+</form>
+</section>
